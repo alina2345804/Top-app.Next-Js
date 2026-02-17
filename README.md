@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+TopApp — Educational Courses Aggregator
 
-## Getting Started
+TopApp — современное frontend-приложение, агрегатор образовательных курсов, построенное на Next.js 15 (App Router), React 19 и TypeScript.
 
-First, run the development server:
+Проект разработан как pet-project и направлен на демонстрацию:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- архитектурного мышления
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- работы с Server Components и SSR
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- качественного UX, доступности и анимаций
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- масштабируемой структуры frontend-кода
 
-## Learn More
+Основные возможности:
 
-To learn more about Next.js, take a look at the following resources:
+- Каталог образовательных курсов
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Поиск и сортировка контента
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Рейтинги и отзывы
 
-## Deploy on Vercel
+- Server-Side Rendering (SSR)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Server Components (Next.js App Router)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Модальные окна
+
+- Loading / empty / error состояния
+
+- Адаптивная вёрстка (mobile / desktop)
+
+- Базовая доступность (a11y)
+
+- Анимации и UI-переходы
+
+Технологический стек
+Core
+
+- Next.js 15 (App Router)
+
+- React 19
+
+- TypeScript (strict mode)
+
+UI / UX
+
+- CSS Modules
+
+- Анимации и переходы на уровне компонентов
+
+- SVGR (SVG как React-компоненты)
+
+State & Logic
+
+- React Context
+
+- Кастомные React-хуки
+
+- Server-side data fetching
+
+Code Quality
+
+- ESLint (Next.js Core Web Vitals)
+
+- Strict TypeScript configuration
+
+- Алиасы путей (@/*)
+
+- Чистая типизация без any
+
+Архитектура проекта
+
+Проект построен по layered / component-oriented architecture
+с чётким разделением ответственности между слоями.
+
+api/            — работа с API и endpoint-конфигурация
+app/            — маршрутизация и страницы (Next.js App Router)
+components/     — UI и бизнес-компоненты
+interfaces/     — TypeScript-интерфейсы и типы
+layout/         — layout-компоненты и структура страниц
+hooks/          — кастомные React-хуки
+helpers/        — утилитарные функции
+context/        — глобальное состояние интерфейса
+public/         — статические ресурсы
+
+Архитектурные принципы
+
+- разделение UI и бизнес-логики
+
+- минимизация связности компонентов
+
+- переиспользуемые хуки и UI-компоненты
+
+- подготовка структуры к масштабированию
+
+Работа с данными
+
+- Server-side data fetching
+
+- Обработка loading / error состояний
+
+- Типизация всех ответов API
+
+Доступность (a11y)
+
+- семантическая HTML-разметка
+
+- корректная работа с фокусом
+
+- доступные модальные окна
+
+- базовая клавиатурная навигация
+
+Цели проекта
+
+- показать современный подход к разработке frontend-приложений
+
+- отработать Next.js App Router и Server Components
+
+- продемонстрировать архитектуру, близкую к production
+
+- сфокусироваться на UX, читаемости кода и поддерживаемости
