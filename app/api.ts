@@ -13,13 +13,13 @@
 
 export const API = {
     topPage: {
-        find: 'https://httpbin.org/post',      // временный тестовый endpoint
-        byAlias: 'https://httpbin.org/post',   // тоже временный
+        find: process.env.NEXT_PUBLIC_DOMAIN + '/api/top-page/find',
+        byAlias: process.env.NEXT_PUBLIC_DOMAIN + '/api/top-page/byAlias/'
     },
     product: {
-        find: 'https://httpbin.org/post',      // если используешь — тоже подменён
+        find: process.env.NEXT_PUBLIC_DOMAIN + '/api/product/find'
     },
     review: {
-        createDemo: 'https://httpbin.org/post' // временный, если используешь
+        createDemo: process.env.NEXT_PUBLIC_DOMAIN + '/api/review/create-demo'
     }
 };

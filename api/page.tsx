@@ -1,8 +1,9 @@
 import { API } from '@/app/api';
 import { TopPageModel } from '@/interfaces/page.interface';
-import {ProductModel} from "@/interfaces/product.interface";
+import { ProductModel } from "@/interfaces/product.interface";
 
 export async function getPage(alias: string): Promise<TopPageModel | null> {
+    // throw new Error('jedfhje')
     // await new Promise((res) => setTimeout(() => { res(''); }, 3000));
     const res = await fetch(API.topPage.byAlias + alias, {
         next: { revalidate: 10 }
@@ -29,4 +30,4 @@ export async function getProduct(page: TopPageModel): Promise<ProductModel[] | n
         return null;
     }
     return res.json();
-} }
+}
